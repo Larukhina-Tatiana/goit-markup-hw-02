@@ -21,7 +21,6 @@
 
 body{
     font-family: "Roboto", sans-serif ;
-    font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
     background-color: var(--page-background);
@@ -37,6 +36,7 @@ body{
 /* Ссылка-Логотип  */
 .logo {
     font-family: 'Raleway';
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.22;
     color: var(--accent-color);
@@ -102,6 +102,7 @@ body{
 .hero-button {
     width: 216px;
     height: 50px;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
@@ -137,6 +138,7 @@ body{
 
 /* Заголовки h3 Секции "Особенности"*/
 .peculiarities-subtitle {
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--title-text-color);
@@ -144,7 +146,6 @@ body{
 
 /* текст Секции "Особенности" */
 .peculiarities-text {
-    font-weight: 400;
     line-height: 1.7;
 }
 
@@ -170,11 +171,9 @@ body{
 }
 
 .team-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    color: var(--priority-text-color);
 }
 
 /* Футер */
@@ -185,9 +184,9 @@ body{
 .address-link,
 .footer-contacts {
     font-style: normal;
-    font-weight: 400;
     line-height: 1.7;
     color: var(--logo-footer);
+    text-decoration: none;
 }
 
 .footer-contacts {
@@ -205,12 +204,13 @@ body{
     color: var(--title-text-color);
     cursor: pointer;
     background: var(--team-background);
-    box-shadow: var(--portfolio-box-shadow);
     border-radius: 4px;
     border: 0;
 }
   /* Активная кнопка */
-.portfolio-button.active {
+.portfolio-button.active,
+.portfolio-button:hover,
+portfolio-button:focus {
     color: var(--logo-footer);
     background: var(--accent-color);
 }
@@ -224,10 +224,8 @@ body{
 }
 
 .projects-text {
-    font-weight: 400;
 font-size: 16px;
 line-height: 1.87;
-color: var(--priority-text-color);
 }
 .project {
     width: 370px;
